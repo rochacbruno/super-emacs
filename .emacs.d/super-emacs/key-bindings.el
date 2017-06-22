@@ -21,6 +21,7 @@
     ("C-S-<down>" . buf-move-down)
     ("C-S-<left>" . buf-move-left)
     ("C-S-<right>" . buf-move-right)
+    ("<f6>" . datestamp)
     ("<f5>" . super-emacs-reload-current-file)))
 
 (defun super-emacs-apply-keyboard-bindings (pair)

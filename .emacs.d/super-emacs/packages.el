@@ -22,6 +22,7 @@
     magit
     git-gutter
     multi-term
+    markdown-mode
     theme-looper))
 
 ;Install required packages

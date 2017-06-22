@@ -45,5 +45,9 @@
 ;Set PYTHONPATH variable
 (setenv "PYTHONPATH" "/home/omaciel/hacking:/home/omaciel/Dropbox/Hacking:/home/omaciel:/home/omaciel/hacking/katello-cli/src")
 
+;Useful function to generate date information
+(defun datestamp ()
+  (interactive)
+  (call-process "date" nil t nil "+%a %b %d %Z %Y"))
 
 
