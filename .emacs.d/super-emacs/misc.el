@@ -23,3 +23,6 @@
 
 ;Enable windmove
 (windmove-default-keybindings)
+
+;Enable git-gutter globally
+(global-git-gutter-mode +1)

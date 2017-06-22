@@ -19,6 +19,8 @@
     which-key
     meta-presenter
     myterminal-controls
+    magit
+    git-gutter
     theme-looper))
 
 ;Install required packages

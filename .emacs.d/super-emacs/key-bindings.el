@@ -11,6 +11,7 @@
     ("C-c M-x" . execute-extended-command)
     ("M-x" . helm-M-x)
     ("C-x b" . helm-mini)
+    ("C-x g" . magit-status)
     ("C-x C-b" . helm-buffers-list)
     ("C-x C-f" . helm-find-files)
     ("C-x C-r" . helm-recentf)
