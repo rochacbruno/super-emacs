@@ -12,6 +12,7 @@
     ("M-x" . helm-M-x)
     ("C-x b" . helm-mini)
     ("C-x g" . magit-status)
+    ("C-x t" . multi-term)
     ("C-x C-b" . helm-buffers-list)
     ("C-x C-f" . helm-find-files)
     ("C-x C-r" . helm-recentf)
@@ -31,3 +32,7 @@
 
 (mapc 'super-emacs-apply-keyboard-bindings
       super-emacs--my-keyboard-bindings)
+
+(global-set-key (kbd "C-c C->") 'mc/mark-next-like-this)
+(global-set-key (kbd "C-c C-<") 'mc/mark-previous-like-this)
+(global-set-key (kbd "C-c C-.") 'mc/mark-all-like-this)

@@ -4,26 +4,30 @@
 
 ;Declare a list of required packages
 (defvar super-emacs--required-packages
-  '(helm
-    multiple-cursors
+  '(
     ace-jump-mode
+    auto-complete
+    buffer-move
+    dired-launch
+    exec-path-from-shell
+    flycheck
+    git-gutter
+    magit
+    markdown-mode
+    material-theme
+    meta-presenter
+    multi-term
+    multiple-cursors
+    myterminal-controls
+    neotree
     powerline
     switch-window
-    buffer-move
-    auto-complete
-    ztree
+    theme-looper
     undo-tree
-    neotree
-    material-theme
-    dired-launch
     which-key
-    meta-presenter
-    myterminal-controls
-    magit
-    git-gutter
-    multi-term
-    markdown-mode
-    theme-looper))
+    ztree
+    helm
+    ))
 
 ;Install required packages
 (mapc (lambda (p)

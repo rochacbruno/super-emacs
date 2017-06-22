@@ -14,6 +14,7 @@
 ;Enforce spaces for indentation, instead of tabs
 (setq-default indent-tabs-mode 
               nil)
+(setq-default tab-width 4)
 
 ;Enable show-paren-mode
 (show-paren-mode)
@@ -29,10 +30,6 @@
 
 ;Setup multi-term
 (setq multi-term-program "/bin/zsh")
-
-;;Default tab and indentation behavior
-(setq-default indent-tabs-mode nil)
-(setq-default tab-width 4)
 
 ;Handles sourcing ZSH
 (let ((path (shell-command-to-string ". ~/.zshrc; echo -n $PATH")))
@@ -51,3 +48,8 @@
   (call-process "date" nil t nil "+%a %b %d %Z %Y"))
 
 
+;; Use Emacs terminfo, not system terminfo
+(setq system-uses-terminfo nil)
+
+;Do not make backups
+(setq make-backup-files nil)
