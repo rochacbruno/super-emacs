@@ -26,3 +26,24 @@
 
 ;Enable git-gutter globally
 (global-git-gutter-mode +1)
+
+;Setup multi-term
+(setq multi-term-program "/bin/zsh")
+
+;;Default tab and indentation behavior
+(setq-default indent-tabs-mode nil)
+(setq-default tab-width 4)
+
+;Handles sourcing ZSH
+(let ((path (shell-command-to-string ". ~/.zshrc; echo -n $PATH")))
+  (setenv "PATH" path)
+  (setq exec-path
+        (append
+         (split-string-and-unquote path ":")
+         exec-path)))
+
+;Set PYTHONPATH variable
+(setenv "PYTHONPATH" "/home/omaciel/hacking:/home/omaciel/Dropbox/Hacking:/home/omaciel:/home/omaciel/hacking/katello-cli/src")
+
+
+

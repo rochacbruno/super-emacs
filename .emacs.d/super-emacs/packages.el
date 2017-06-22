@@ -21,6 +21,7 @@
     myterminal-controls
     magit
     git-gutter
+    multi-term
     theme-looper))
 
 ;Install required packages
