@@ -12,6 +12,8 @@
     exec-path-from-shell
     flycheck
     git-gutter
+    helm
+    jedi
     magit
     markdown-mode
     material-theme
@@ -26,7 +28,6 @@
     undo-tree
     which-key
     ztree
-    helm
     ))
 
 ;Install required packages
