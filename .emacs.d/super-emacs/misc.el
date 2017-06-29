@@ -28,6 +28,11 @@
 ;Enable git-gutter globally
 (global-git-gutter-mode +1)
 
+;Handle SSH AGENT for passwordless ssh
+(require 'exec-path-from-shell)
+(exec-path-from-shell-copy-env "SSH_AGENT_PID")
+(exec-path-from-shell-copy-env "SSH_AUTH_SOCK")
+
 ;Setup multi-term
 (setq multi-term-program "/bin/zsh")
 
