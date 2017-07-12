@@ -20,7 +20,7 @@ An out-of-the-box Emacs configuration with super powers, now also on Docker!
 
 Clone the repository with
 
-    git clone https://github.com/myTerminal/super-emacs
+    git clone https://github.com/omaciel/super-emacs
 
 or download the repository as an archive and place it at your `home` directory. Once done, start Emacs or well, super Emacs.
 
@@ -40,6 +40,12 @@ Pull super-emacs docker image and start `emacs`
 6. Super-easy file system navigation with `neotree`
 7. No more welcome screen, Emacs starts up to greet you and shows the date
 8. Reload file in a buffer quickly with `<f5>`
+9. Python development ready!
+10. Fully integration with ZSH shell
+11. Use [multi-term](https://www.emacswiki.org/emacs/MultiTerm) for all shell needs
+12. Git enabled with the power of [magit](https://magit.vc/)
+13. Mark down ready
+
 
 ### Pre-configured packages
 
@@ -58,6 +64,9 @@ Pull super-emacs docker image and start `emacs`
 13. [meta-presenter](https://github.com/myTerminal/meta-presenter) for presenting slide-shows from within Emacs
 14. [myterminal-controls](https://github.com/myTerminal/myterminal-controls) for quick-toggle controls at a key-stroke
 15. [theme-looper](https://github.com/myTerminal/theme-looper) for switching themes in style
+16. [magit](https://magit.vc/) for powerful integration with Git
+17. [multi-term](https://www.emacswiki.org/emacs/MultiTerm) for a better console experience
+18. [jedi](https://tkf.github.io/emacs-jedi/latest/), [flycheck](http://www.flycheck.org/en/latest/) for a smooth experience while writing Python code - Refer to [python.el](.emacs.d/super-emacs/python.el) for information about installing Python packages and configuring the jedi server)
 
 ### Key-bindings
 
